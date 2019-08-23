@@ -17,11 +17,9 @@ void loop()
         for(nombre_Tour = nombre_Led-1; nombre_Tour >= 0; nombre_Tour--){
           digitalWrite(position_Depart+nombre_Tour,HIGH);
           delay(temps_Allumage);
-        }
-        for(nombre_Tour = nombre_Led-1; nombre_Tour >= 0; nombre_Tour--){
           digitalWrite(position_Depart+nombre_Tour,LOW);
-          delay(temps_Allumage);
         }
-        delay(temps_Allumage);
+        delay(100);
     }
+    delay(2500);
 }

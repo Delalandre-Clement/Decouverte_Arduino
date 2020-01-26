@@ -1,3 +1,4 @@
+
 // Elements pour la connection ethernet (serveur web)
 #include "SPI.h"
 #include "Ethernet.h"
@@ -36,6 +37,9 @@ void respond_local_server()
                     local_client.println("Content-Type: application/json");
                     local_client.println("Connection: close");
                     local_client.println();
+                    
+                    char sPostData[150] = "Coucou";
+                    local_client.println(sPostData);
 
                     break;
                 }

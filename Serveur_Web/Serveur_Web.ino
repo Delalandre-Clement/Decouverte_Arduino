@@ -3,7 +3,7 @@
 #include "SPI.h"
 #include "Ethernet.h"
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(192, 168, 1, 143); // Adresse IP du serveur web de l'arduino sur le réseau local
+IPAddress ip(192, 168, 1, 200); // Adresse IP du serveur web de l'arduino sur le réseau local
 EthernetServer local_server(80);  // creation d'un serveur web sur le port standard 80
 
 void setup() 
